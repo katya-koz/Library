@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Katya's Little Book Library</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body onload="loadDataPage();">
+  <div class = "title-container">Katya's Little Library</div>
+  <div class = "general-container">
+    <div class="navigatorContainer">
+        <a href="index.html">Search</a>
+        <a class="active" href="dataTable.html">Data Table</a>
+    </div>
+    <div>
+      <button id="sort-by-index">Index #</button>  
+      <button id="sort-by-first-names">First Names</button>
+      <button id="sort-by-last-names">Last Names</button>
+      <button id="sort-by-uids">Uids</button>
+      <button id="sort-by-titles">Titles</button>
+      <button id='page-number-back'><</button>
+      <button id='page-number-next'>></button>
+      <h4 id="data-entries"></h4>
+    </div>
+  </div>  
+</body>
+</html>
+<script src="./script.js"  type = "module"></script>

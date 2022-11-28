@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Katya's Little Book Library</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body onload="loadSearchPage();">
+  <div class = "title-container">Katya's Little Library</div>
+    <div class="navigator-container">
+        <a class="active" href="index.html">Search</a>
+        <a href="dataTable.html">Data Table</a>
+    </div>
+    <div class = "search-container"><input type="search" id='search-input' autocapitalize="words"></div> <!-- autocapitalize -->
+  <div class = "general-container">  
+  <form action="/action_page.php">
+    <label for="search-category">Choose a search type:</label>
+      <select id="search-category" name="search-category">
+        <option value="first-names">First Name</option>
+        <option value="last-names">Last Name</option>
+        <option value="uids">uids</option>
+        <option value="titles">Titles</option>
+      </select>
+    <input type="button" id="search-button" value='search'>Search
+  </form>
+  <div id = "performance"> </div>
+  </div>
+    <div class = "results-container">
+        <h4 id="results-element">
+        </h4>
+    </div>
+</body>
+
+</html>
+<script src="./script.js" type="module"></script>
+
